@@ -1,4 +1,4 @@
-#!/home/salamat/projects/devman/env/bin/python3
+#!/home/salamat/projects/devman/devman_django/env/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

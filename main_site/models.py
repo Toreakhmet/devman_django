@@ -12,7 +12,8 @@ class Excursion(models.Model):
 
 class Image(models.Model):
     excursion = models.ForeignKey(Excursion, related_name='images', on_delete=models.CASCADE)
-    url = models.URLField()
+    url = models.ImageField(upload_to="Images")
+    count=models.IntegerField(default=0)
 
     def __str__(self):
-        return f"Image for {self.excursion.title}"
+        return f"{self.count}  Image for {self.excursion.title}"
